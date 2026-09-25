@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python pacman\\.py -l mediumMaze -p StayWestSearchAgent -q$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

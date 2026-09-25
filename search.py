@@ -171,8 +171,6 @@ def depthFirstSearch(problem: SearchProblem):
             writer.writerows(log_rows)
 
     return []
-
-# Alishba Nasir(i243176)
 #.........................................
 def breadthFirstSearch(problem: SearchProblem):
     """Search the shallowest nodes in the search tree first."""
@@ -260,7 +258,7 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
-# Alishba Nasir(i243176)
+
 # .........................................
 def greedyBestFirstSearch(problem: SearchProblem, heuristic=nullHeuristic):
     """Search the node that has the lowest heuristic value first."""
@@ -389,7 +387,7 @@ def uniformCostSearch(problem: SearchProblem):
     iteration = 0
 
     while not frontier.isEmpty():
-        frontier_before = [str(item[2]) for item in frontier.heap]
+        frontier_before = [str(item[2]) for item in frontier.heap] # for logging
         state = frontier.pop()
         cost = best_cost[state]
         if state in explored:
@@ -467,7 +465,6 @@ def uniformCostSearch(problem: SearchProblem):
 
     return []
 
-# Alishba Nasir(i243176)
 # .........................................
 def aStarSearch(problem: SearchProblem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
